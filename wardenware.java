@@ -29,7 +29,7 @@ public class Wardenware {
             }
         });
 
-        // Screenshot capture
+        // Screenshot capture, ayo bro????
         Timer timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override
